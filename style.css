@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--Violet);
+    color: white;
+    background-image: url(./images/bg-desktop.svg);
+    background-size: unset;
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    margin: 20px auto 0px;
+    width: 1284px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*Seccion1*/
+#section1{
+    width: 753px;
+    height: 700px;
+}
+#logo{
+    height: 134px;
+}
+#mockup{
+    width: 696px;
+}
+/*seccion2*/
+#section2{
+    height: 700px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 165px;
+    font-size: 39px;
+    text-align: left;
+    height: 133px;
+    
+}
+#section2 p{
+    font-size: 18px;
+    text-align: left;
+    height: 98px;
+    padding-right: 17px;
+}
+.btn-register{
+    text-align: left;
+    margin-bottom: 179px;
+}
+.btn-register a{
+    width: 200px;
+    height: 58px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: var(--Violet);
+    background-color: white;
+    display: inline-block;
+    padding-top: 14px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 3px 5px 8px  black;
+}
+.btn-register a:hover{
+    background: var(--SoftMagenta);
+    color: white;
+}
+.social-container{
+    text-align: right;
+    margin-top: -100px;
+}
+.redes{
+    width: 156px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.redes a{
+    border: 2px solid white;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    padding: 8px;
+    text-align: center;
+}
+.redes a:hover{
+    border-color: var(--SoftMagenta);
+    color: var(--SoftMagenta);
+    cursor: pointer;
+}
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media only screen and (max-width:450px) {
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main{
+        width: 595px;
+        height: 1100px;
+        margin: 40px auto 20px;
+        display: inline-block;
+    }
+    #section1{
+        height: 480px;
+        width: 595px;
+        padding: 0px 35px;
+        margin-bottom: 20px;
+    }
+    #logo{
+        text-align: center;
+        width: 550px;
+        height: 60px;
+        margin-bottom: 20px;
+        animation: updown 1000ms;
+    }
+    #mockup{
+        width: 530px;
+        animation: downup 1000ms;
+    }
+    #section2{
+        animation: rigth 1000ms;
+        width: 595px;
+        height: 580px;
+        padding: 0px 25px;
+    }
+    h1{
+        margin-top: -5px;
+        font-size: 46px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    #section2 p{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+    .btn-register{
+        text-align: center;
+        margin-bottom: 130px;
+    }
+    .btn-register a{
+        width: 400px;
+        height: 86px;
+        font-size: 25px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 22px;
+    }
+    .social-container{
+        text-align: center;
+    }
+    .redes{
+        width: 208px;
+    }
+    .redes a{
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+        padding-top: 12px;
+    }
+    .attribution { 
+        font-size: 20px; 
+        text-align: center;
+    }
+    .attribution a { 
+        color: black; 
+    }
+    footer{
+        width: 595px;
+        margin-bottom: 15px;
+    }
+@keyframes updown {
+    0%{transform: translateY(-500px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes downup {
+    0%{transform: translateY(500px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes rigth {
+    0%{transform: translateX(500px);}
+    100%{transform: translateX(0px);}
+}
+}
